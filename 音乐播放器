@@ -1,0 +1,20 @@
+#导入pygame库
+import pygame
+import time#引入时间模块   不然只运行没有声音
+
+#定义音乐路径
+filePath = r'C:\Users\Administrator.DESKTOP-IJJCE10\Music\Dame D.O.L.L.A. _ Lil Wayne - Run It Up.mp3'         #r 在字符串前面加是为了防止字符转义
+
+
+#初始化音乐
+pygame.mixer.init()
+
+
+#加载音乐
+pygame.mixer.music.load(filePath)
+
+
+
+#播放音乐
+pygame.mixer.music.play()
+time.sleep(10)#播放十秒钟
