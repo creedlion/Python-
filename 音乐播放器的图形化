@@ -1,0 +1,34 @@
+pygame.init()
+l = Label(window,text="欢迎使用迷你播放器")
+l.pack()
+
+#添加按钮
+Button(window,text="选择音乐").pack()
+Button(window,text="暂停").pack()
+Button(window,text="继续").pack()
+Button(window,text="停止").pack()
+
+
+#暂停
+def pause():
+    pygame.mixer.music.pause()
+#继续
+
+def unpause():
+    pygame.mixer.music.unpause()
+#停止
+def stop():
+    pygame.mixer.music.stop()
+
+#选择
+def choose():
+    file = filedialog.askopenfilename()
+    pygame.mixer.music.load(file)
+    pygame.mixer.music.play()
+
+#实现播放
+Button(window,text="选择音乐",command=choose).pack()
+Button(window,text="暂停",command=pause).pack()
+Button(window,text="继续",command=unpause).pack()
+Button(window,text="停止",command=stop).pack()
+window.mainloop()
