@@ -1,0 +1,6 @@
+import 特殊函数 as MA #”特殊函数“为定义函数这个py文件的文件名
+
+
+
+if __name__ == '__main__':
+    print(MA.add(100,200))
