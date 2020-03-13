@@ -1,0 +1,26 @@
+'''import turtle
+turtle.pensize(5)#画笔宽度
+
+turtle.pencolor("red")#画笔颜色
+
+
+turtle.fillcolor("yellow")
+turtle.begin_fill()
+turtle.goto(300, 0)
+turtle.goto(300, 200)
+turtle.goto(0,200)
+turtle.goto(0,0)
+
+turtle.end_fill()
+turtle.mainloop()'''
+
+
+import turtle as t
+t.pensize(5)
+t.pencolor("red")
+t.forward(100)
+t.right(120)
+t.forward(100)
+t.right(120)
+t.forward(100)
+t.mainloop()
