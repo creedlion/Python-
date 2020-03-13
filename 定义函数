@@ -1,0 +1,17 @@
+#定义函数
+
+#定义加法函数
+def add(num01,num02):
+    return num01+num02
+#定义减法函数
+def sub(num01,num02):
+    return num01-num02
+#定义乘法函数
+def mul(num01,num02):
+    return num01*num02
+#定义除法函数
+def div(num01,num02):
+    return num01/num02
+
+if __name__ == "__main__":
+    print(add(100,200))
